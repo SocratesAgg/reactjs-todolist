@@ -5,7 +5,7 @@ import handleAddTodos from './functions/handleAddTodos';
 import handleDeleteTodo from './functions/handleDeleteTodo';
 import handleEditTodo from './functions/handleEditTodo';
 import loadTodos from './functions/loadTodos';
-import Signature from './functions/Signature';
+import Signature from './functions/signature';
 
 function App() {
   const [todos, setTodos] = useState([]);
