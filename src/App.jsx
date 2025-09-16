@@ -46,18 +46,32 @@ function App() {
 
   },[])
 
-  return (
-    <>
-      <TodoInput 
-        todoValue={todoValue}
-        setTodoValue={setTodoValue}
-        handleAddTodos={handleAddTodos} />
-      <TodoList 
-        handleEditTodo={handleEditTodo}
-        handleDeleteTodo={handleDeleteTodo}
-        todos={todos} />
-    </>
-  )
+return (
+  <>
+    <TodoInput 
+      todoValue={todoValue}
+      setTodoValue={setTodoValue}
+      handleAddTodos={handleAddTodos} 
+    />
+    <TodoList 
+      handleEditTodo={handleEditTodo}
+      handleDeleteTodo={handleDeleteTodo}
+      todos={todos} 
+    />
+
+    {/* Signature */}
+    <div style={{
+      position: "fixed",
+      bottom: "10px",
+      right: "10px",
+      fontSize: "0.9rem",
+      color: "#555",
+      fontStyle: "italic"
+    }}>
+      © Socrates Aggelakopoulos 16/09/2025
+    </div>
+  </>
+)
 }
 
 export default App
